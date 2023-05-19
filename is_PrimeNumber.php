@@ -1,11 +1,16 @@
 <?php
 
 function isPrimeNumber($userInput){
-    $checkNumber = "";
-    if($userInput === 1){
+    $checkNumber = "It's a Prime Number";
+    if($userInput === 1 ){
         echo "1 is a Prime Number";
-    }else{
+    }
+    else if($userInput < 0){
+        echo "Please put greater 1";
+    }
+    else{
         for($i = 2;$i < $userInput;$i++){
+            echo $i;
             if($userInput % $i == 0){
                 $checkNumber = $userInput." It's not Prime Number";
                 break;
@@ -22,3 +27,4 @@ function isPrimeNumber($userInput){
 $a = readline('Enter a Number: ');
 
 echo isPrimeNumber($a);
+
