@@ -1,7 +1,7 @@
 <?php
 
-$date1 = "23-10-2002";
-$date2 = "20-05-2023";
+$date1 = readLine("Please enter your Birth Date(12-08-2021)");
+$date2 = date("Y-m-d");
 
 function diffDate($getDate1,$getDate2){
     $difTwoDates = strtotime($getDate2) - strtotime($getDate1);
